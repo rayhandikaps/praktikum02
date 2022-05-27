@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form login</title>
+    <link rel="stylesheet" href="form_login_style.css">
+</head>
+<body>
+    <form action="form_proses_post.php" method="post">
+        <fieldset>
+            <legend>Login</legend>
+            <p>
+                <label for="username">Username </label>
+                <input type="text" name="username" id="username" placeholder="Here" required pattern="[a-zA-Z0-9]{8,12}">
+            </p>
+            <p>
+                <label for="password">Password </label>
+                <input type="password" name="password" id="password" placeholder="Here" required>
+            </p>
+            <p>
+                <input type="checkbox" name="remember" id="remember" value="remember">
+                 <label for="remember">Remember me</label>
+            </p>
+            <p>
+                <input type="submit" value="Login">
+            </p>
+        </fieldset>
+    </form>
+</body>
+</html>
